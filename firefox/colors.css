@@ -1,0 +1,9 @@
+:root {
+  --md-primary: #EB1710;
+  --md-on-primary: #FFFFFF;
+  --md-surface: #D24636;
+  --md-on-surface: #9B6500;
+
+  --md-surface-rgb: 210,70,54;
+  --md-primary-rgb: 235,23,16;
+}
