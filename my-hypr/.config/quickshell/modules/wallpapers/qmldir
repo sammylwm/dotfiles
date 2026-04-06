@@ -1,0 +1,2 @@
+module modules.wallpapers
+WallpaperPicker WallpaperPicker.qml

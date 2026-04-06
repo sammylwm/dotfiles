@@ -1,47 +1,72 @@
+//@ pragma Env QS_NO_RELOAD_POPUP=1
+//@ pragma Env QSG_RENDER_LOOP=threaded
+//@ pragma Env QT_QUICK_FLICKABLE_WHEEL_DECELERATION=10000
+import "modules/wallpapers" as WallpaperModule
 import Quickshell
+import Quickshell.Services.Notifications
+import QtQuick 6.10
+import "services" as QsServices
+import "modules/osd"
 import Quickshell.Io
-import QtQuick
+ShellRoot {
+    id: root
+    
+    // Initialize services immediately
+    readonly property var notifs: QsServices.Notifs
+    readonly property var pywal: QsServices.Pywal
+    readonly property var audio: QsServices.Audio
+    readonly property var brightness: QsServices.Brightness
 
-PanelWindow {
-  anchors {
-    top: true
-    left: true
-    right: true
-  }
-
-  implicitHeight: 30
-
-  Text {
-    id: clock
-    anchors.centerIn: parent
-
-    Process {
-      // give the process object an id so we can talk
-      // about it from the timer
-      id: dateProc
-
-      command: ["date"]
-      running: true
-
-      stdout: StdioCollector {
-        onStreamFinished: clock.text = this.text
-      }
+    WallpaperModule.WallpaperPicker {
+        id: wallpaperPicker
     }
 
-    // use a timer to rerun the process at an interval
-    Timer {
-      // 1000 milliseconds is 1 second
-      interval: 1000
-
-      // start the timer immediately
-      running: true
-
-      // run the timer again when it ends
-      repeat: true
-
-      // when the timer is triggered, set the running property of the
-      // process to true, which reruns it if stopped.
-      onTriggered: dateProc.running = true
+    IpcHandler {
+        target: "wallpaper-picker"
+        function toggle(): void {
+            wallpaperPicker.visible = !wallpaperPicker.visible
+        }
     }
-  }
+    // Direct NotificationServer to ensure it starts
+    NotificationServer {
+        id: notificationServer
+        
+        keepOnReload: false
+        actionsSupported: true
+        bodyHyperlinksSupported: true
+        bodyMarkupSupported: true
+        imageSupported: true
+        persistenceSupported: true
+        
+        onNotification: notif => {
+            console.log("📬 [ShellRoot] Notification received:", notif.appName, notif.summary);
+            notif.tracked = true;
+            notifs.addNotification(notif);
+        }
+        
+        Component.onCompleted: {
+            console.log("🔔 NotificationServer registered on D-Bus");
+        }
+    }
+    
+    Loader {
+        id: barLoader
+        source: "modules/bar/BarWrapper.qml"
+    }
+    
+    // Notification popups in top-right corner
+    Loader {
+        id: notificationPopupsLoader
+        source: "modules/bar/components/NotificationPopups.qml"
+    }
+
+
+    // OSD overlays (volume and brightness)
+    Wrapper {
+        pywal: root.pywal
+    }
+
+    Component.onCompleted: {
+        console.log("QuickShell loaded successfully!")
+    }
 }
