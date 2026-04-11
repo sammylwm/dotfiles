@@ -10,6 +10,11 @@ FloatingWindow {
     visible: false
     implicitWidth: 900
     implicitHeight: 600
+    onVisibleChanged: {
+        console.log("WallpaperPicker visible changed:", visible)
+        if (visible) requestActivate()
+    }
+
 
     property string wallpaperDir: "/home/sammy/dotfiles/Wallpapers"
     property var wallpapers: []
@@ -101,6 +106,7 @@ FloatingWindow {
                             }
                         }
                     }
+
                 }
             }
 

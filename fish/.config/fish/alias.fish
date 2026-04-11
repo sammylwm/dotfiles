@@ -8,3 +8,4 @@ alias almup="alembic upgrade head"
 alias dps='docker ps --format "{{.Names}} - {{.Status}}"'
 alias flutter_build="flutter pub run build_runner build --delete-conflicting-outputs"
 alias dcdev="docker compose -f docker-compose.dev.yml"
+alias sshp="ssh -p 1009 sammy@lednevs.ru"
