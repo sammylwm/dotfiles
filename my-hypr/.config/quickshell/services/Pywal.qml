@@ -121,7 +121,7 @@ Singleton {
     // Load colors from pywal cache
     FileView {
         id: pywalFile
-        path: "/home/tripathiji/.cache/wal/colors.json"
+        path: "/home/sammy/.cache/wal/colors.json"
         watchChanges: true
         onLoaded: root.loadColors(text())
         onFileChanged: root.loadColors(text())

@@ -245,6 +245,45 @@ Item {
                     }
                 }
             }
+            // ═══ PILL 3: Language (RU / EN) ═══
+            Rectangle {
+                id: langPill
+                height: 28
+                width: langContent.implicitWidth + 16
+                radius: 14
+                color: pywal.surfaceContainer
+                border.width: 1
+                border.color: Qt.rgba(0, 0, 0, 0.15)
+
+                Behavior on color { ColorAnimation { duration: 300 } }
+                Behavior on width { NumberAnimation { duration: 250 } }
+
+                Rectangle {
+                    anchors.top: parent.top
+                    anchors.left: parent.left
+                    anchors.right: parent.right
+                    anchors.margins: 1
+                    height: parent.height / 2
+                    radius: parent.radius - 1
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: Qt.rgba(1, 1, 1, 0.04) }
+                        GradientStop { position: 1.0; color: "transparent" }
+                    }
+                }
+
+                Row {
+                    id: langContent
+                    anchors.centerIn: parent
+                    spacing: 6
+
+                    Loader {
+                        id: langLoader
+                        anchors.verticalCenter: parent.verticalCenter
+                        asynchronous: true
+                        source: "components/Language.qml"
+                    }
+                }
+            }
             
             // ═══ PILL 2: Brightness + Volume (Audio/Display) ═══
             Rectangle {
