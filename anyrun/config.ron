@@ -1,0 +1,17 @@
+Config(
+    plugins: [
+        "/home/sammy/.config/anyrun/plugins/libapplications.so",
+        "/home/sammy/.config/anyrun/plugins/librink.so",
+        "/home/sammy/.config/anyrun/plugins/libsymbols.so",
+        "/home/sammy/.config/anyrun/plugins/libwebsearch.so",
+        "/home/sammy/.config/anyrun/plugins/libtranslate.so",
+        "/home/sammy/.config/anyrun/plugins/libshell.so",
+        "/home/sammy/.config/anyrun/plugins/libstdin.so",
+        "/home/sammy/.config/anyrun/plugins/libdictionary.so",
+        "/home/sammy/.config/anyrun/plugins/libkidex.so",
+        "/home/sammy/.config/anyrun/plugins/libnix_run.so",
+        "/home/sammy/.config/anyrun/plugins/libactions.so",
+        "/home/sammy/.config/anyrun/plugins/libniri_focus.so",
+        "/home/sammy/.config/anyrun/plugins/librandr.so",
+    ],
+)
