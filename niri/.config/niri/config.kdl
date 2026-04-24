@@ -1,0 +1,9 @@
+prefer-no-csd
+include "./cfg/general.kdl"
+include "./cfg/monitor.kdl"
+include "./cfg/windows.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/execs.kdl"
+include "./cfg/binds.kdl"
+include "./noctalia.kdl"
+
