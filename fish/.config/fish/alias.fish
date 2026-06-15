@@ -1,5 +1,5 @@
 alias c="clear"
-alias ls="exa"
+alias ls="eza"
 alias aliascf="nano ~/.config/fish/alias.fish"
 alias hs="history | grep --color=auto "
 alias dc="docker compose"

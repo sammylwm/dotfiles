@@ -7,10 +7,7 @@ source=./cfg/execs.conf
 source=./cfg/special_workspaces.conf
 # This sources the noctalia theme
 
-#source = /home/sammy/.config/mango/noctalia.conf
+source = /home/sammy/.config/mango/noctalia.conf
 exec-once=env QT_QPA_PLATFORMTHEME=qt6ct QT_QPA_PLATFORMTHEME_QT6=qt6ct dms run
 
 exec-once=/home/sammy/.local/bin/dms-mango-post-startup
-source = ./dms/binds.conf
-
-source=./dms/cursor.conf
