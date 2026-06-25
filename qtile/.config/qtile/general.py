@@ -4,11 +4,15 @@ from libqtile.lazy import lazy
 
 from env import mod
 
+from libqtile.backend.wayland import InputConfig
+
+
 wl_input_rules = {
     "type:keyboard": InputConfig(
         kb_layout="us,ru",
         kb_options="grp:alt_shift_toggle",
     ),
+    "type:touchpad": InputConfig(tap=True, natural_scroll=True, dwt=True),
 }
 mouse = [
     Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),

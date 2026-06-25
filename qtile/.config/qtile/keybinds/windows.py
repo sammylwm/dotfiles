@@ -49,7 +49,7 @@ for vt in range(1, 8):
         )
     )
 
-groups = [Group(i) for i in "12345678"]
+groups = [Group(i) for i in "123456789"]
 
 for i in groups:
     keys.extend(
