@@ -14,5 +14,3 @@ exec-once=/home/sammy/.local/bin/dms-mango-post-startup
 source = ./dms/binds.conf
 
 source=./dms/cursor.conf
-
-source=./dms/outputs.conf
