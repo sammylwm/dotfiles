@@ -1,11 +1,7 @@
-from libqtile.backend.wayland import InputConfig
 from libqtile.config import Drag, Click
 from libqtile.lazy import lazy
-
 from env import mod
-
 from libqtile.backend.wayland import InputConfig
-
 
 wl_input_rules = {
     "type:keyboard": InputConfig(
