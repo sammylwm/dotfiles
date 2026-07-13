@@ -6,36 +6,36 @@
   --tab-selected-textcolor: #4b8cd8 !important;
   --toolbar-color: #d3dae3 !important;
   --arrowpanel-color: #d3dae3 !important;
-  --arrowpanel-background: #282c35 !important;
+  --arrowpanel-background: #20242c !important;
   --sidebar-text-color: #d3dae3 !important;
-  --zen-main-browser-background: #242730 !important;
-  --zen-main-browser-background-toolbar: #242730 !important;
+  --zen-main-browser-background: #1c1f26 !important;
+  --zen-main-browser-background-toolbar: #1c1f26 !important;
 }
 
 #zen-browser-background {
-  --zen-main-browser-background: #242730 !important;
+  --zen-main-browser-background: #1c1f26 !important;
   --zen-background-opacity: 1 !important;
 }
 
 #zen-toolbar-background {
-  --zen-main-browser-background-toolbar: #242730 !important;
+  --zen-main-browser-background-toolbar: #1c1f26 !important;
   --zen-background-opacity: 1 !important;
 }
 
 .sidebar-placesTree {
-  background-color: #282c35 !important;
+  background-color: #20242c !important;
 }
 
 #zen-workspaces-button {
-  background-color: #282c35 !important;
+  background-color: #20242c !important;
 }
 
 #TabsToolbar {
-  background-color: #242730 !important;
+  background-color: #1c1f26 !important;
 }
 
 .urlbar-background {
-  background-color: #282c35 !important;
+  background-color: #20242c !important;
 }
 
 .urlbar-input::selection {
@@ -44,7 +44,7 @@
 }
 
 .urlbarView-url {
-  color: #b1b8c1 !important;
+  color: #afb5bd !important;
 }
 
 toolbar .toolbarbutton-1 {
@@ -61,8 +61,8 @@ toolbar .toolbarbutton-1 {
 }
 
 .identity-color-blue {
-  --identity-tab-color: #4698f8 !important;
-  --identity-icon-color: #4698f8 !important;
+  --identity-tab-color: #69a6ed !important;
+  --identity-icon-color: #69a6ed !important;
 }
 
 .identity-color-turquoise {
@@ -71,37 +71,37 @@ toolbar .toolbarbutton-1 {
 }
 
 .identity-color-green {
-  --identity-tab-color: #42ed5a !important;
-  --identity-icon-color: #42ed5a !important;
+  --identity-tab-color: #8aff9a !important;
+  --identity-icon-color: #8aff9a !important;
 }
 
 .identity-color-yellow {
-  --identity-tab-color: #fff215 !important;
-  --identity-icon-color: #fff215 !important;
+  --identity-tab-color: #fff88a !important;
+  --identity-icon-color: #fff88a !important;
 }
 
 .identity-color-orange {
-  --identity-tab-color: #fff205 !important;
-  --identity-icon-color: #fff205 !important;
+  --identity-tab-color: #fff547 !important;
+  --identity-icon-color: #fff547 !important;
 }
 
 .identity-color-red {
-  --identity-tab-color: #ff5889 !important;
-  --identity-icon-color: #ff5889 !important;
+  --identity-tab-color: #ff82a7 !important;
+  --identity-icon-color: #ff82a7 !important;
 }
 
 .identity-color-pink {
-  --identity-tab-color: #c9e2ff !important;
-  --identity-icon-color: #c9e2ff !important;
+  --identity-tab-color: #8ac0ff !important;
+  --identity-icon-color: #8ac0ff !important;
 }
 
 .identity-color-purple {
-  --identity-tab-color: #c9e2ff !important;
-  --identity-icon-color: #c9e2ff !important;
+  --identity-tab-color: #002e64 !important;
+  --identity-icon-color: #002e64 !important;
 }
 
 #zen-appcontent-navbar-container {
-  background-color: #242730 !important;
+  background-color: #1c1f26 !important;
 }
 
 #PanelUI-menu-button .toolbarbutton-icon,

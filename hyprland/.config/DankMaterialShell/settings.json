@@ -433,7 +433,7 @@
     }
   },
   "matugenTemplateNeovimSetBackground": true,
-  "showDock": true,
+  "showDock": false,
   "dockAutoHide": false,
   "dockSmartAutoHide": false,
   "dockUseOverlayLayer": false,
@@ -577,6 +577,11 @@
         "clock"
       ],
       "rightWidgets": [
+        {
+          "id": "keyboard_layout_name",
+          "enabled": true,
+          "keyboardLayoutNameShowIcon": false
+        },
         {
           "id": "systemTray",
           "enabled": true
