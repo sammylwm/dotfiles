@@ -10,3 +10,4 @@ alias flutter_build="flutter pub run build_runner build --delete-conflicting-out
 alias dcdev="docker compose -f docker-compose.dev.yml"
 alias sshp="ssh -p 1009 sammy@lednevs.ru"
 alias logout="loginctl terminate-session self"
+alias nano="nvim"
