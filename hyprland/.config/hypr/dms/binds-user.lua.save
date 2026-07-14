@@ -12,6 +12,8 @@ hl.unbind("SUPER + M")
 hl.bind("SUPER + M", hl.dsp.workspace.toggle_special("music"))
 hl.unbind("SUPER + S")
 hl.bind("SUPER + S", hl.dsp.workspace.toggle_special("happ"))
+hl.unbind("ALT + CTRL + SHIFT + L")
+hl.bind("ALT + CTRL + SHIFT + L", close-window, { description = "Close Window" })
 hl.unbind("SUPER + SHIFT + right")
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "r" }))
 hl.unbind("SUPER + SHIFT + up")
@@ -46,11 +48,8 @@ hl.unbind("SUPER + T")
 hl.bind("SUPER + T", hl.dsp.exec_cmd("foot"), { description = "foot" })
 hl.unbind("SUPER + SHIFT + P")
 hl.bind("SUPER + SHIFT + P", hl.dsp.dpms({ action = "toggle" }))
-hl.unbind("ALT + CTRL + SHIFT + L")
-hl.unbind("ALT + space")
-hl.unbind("CTRL + ALT")
-hl.unbind("CTRL + space")
-hl.bind("CTRL + space", hl.dsp.global("menu.kando.Kando:main"), { description = "global menu.kando.Kando:main" })
+hl.unbind("CTRL + Space")
+hl.bind("CTRL + Space", hl.dsp.global("menu.kando.Kando:example-menu"))
 hl.unbind("SUPER + CTRL + F")
 hl.bind("SUPER + CTRL + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.unbind("SUPER + F")
@@ -68,3 +67,19 @@ hl.unbind("SUPER + bracketleft")
 hl.bind("SUPER + bracketleft", hl.dsp.layout("preselect l"))
 hl.unbind("SUPER + bracketright")
 hl.bind("SUPER + bracketright", hl.dsp.layout("preselect r"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
