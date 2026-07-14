@@ -3,7 +3,11 @@
 hl.unbind("SUPER + O")
 hl.bind("SUPER + O", hl.dsp.exec_cmd("dms ipc call dankdash wallpaper"), { description = "Wallpaper Browser" })
 hl.unbind("SUPER + R")
-hl.bind("SUPER + R", hl.dsp.exec_cmd("dms ipc call spotlight toggle"), { description = "dms ipc call spotlight toggle" })
+hl.bind(
+	"SUPER + R",
+	hl.dsp.exec_cmd("dms ipc call spotlight toggle"),
+	{ description = "dms ipc call spotlight toggle" }
+)
 hl.unbind("SUPER + D")
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("tg"))
 hl.unbind("SUPER + L")
@@ -17,9 +21,17 @@ hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "r" }))
 hl.unbind("SUPER + SHIFT + up")
 hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "u" }))
 hl.unbind("SUPER + code:20")
-hl.bind("SUPER + code:20", hl.dsp.window.resize({ x = -100, y = 0, relative = true }), { description = "Expand window left" })
+hl.bind(
+	"SUPER + code:20",
+	hl.dsp.window.resize({ x = -100, y = 0, relative = true }),
+	{ description = "Expand window left" }
+)
 hl.unbind("SUPER + code:21")
-hl.bind("SUPER + code:21", hl.dsp.window.resize({ x = 100, y = 0, relative = true }), { description = "Shrink window left" })
+hl.bind(
+	"SUPER + code:21",
+	hl.dsp.window.resize({ x = 100, y = 0, relative = true }),
+	{ description = "Shrink window left" }
+)
 hl.unbind("SUPER + down")
 hl.bind("SUPER + down", hl.dsp.focus({ direction = "d" }))
 hl.unbind("SUPER + equal")
@@ -50,7 +62,6 @@ hl.unbind("ALT + CTRL + SHIFT + L")
 hl.unbind("ALT + space")
 hl.unbind("CTRL + ALT")
 hl.unbind("CTRL + space")
-hl.bind("CTRL + space", hl.dsp.global("menu.kando.Kando:main"), { description = "global menu.kando.Kando:main" })
 hl.unbind("SUPER + CTRL + F")
 hl.bind("SUPER + CTRL + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.unbind("SUPER + F")
