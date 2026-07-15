@@ -983,7 +983,9 @@
           "Create failed": "Create failed",
           "Information": "Information"
         },
-        "i18nToken": 1784029024177
+        "i18nToken": 1784029024177,
+        "customFolderPath": "/home/sammy",
+        "folderType": "home"
       },
       "positions": {
         "eDP-1": {
@@ -1010,11 +1012,6 @@
             "name": "Zen Browser",
             "icon": "zen-browser",
             "exec": "/opt/zen-browser-bin/zen-bin"
-          },
-          {
-            "name": "Zapret Discord YouTube",
-            "icon": "network-workgroup",
-            "exec": "bash -c 'cd \"/home/sammy/zapret-discord-youtube-linux\" && bash \"/home/sammy/zapret-discord-youtube-linux/service.sh\" daemon'"
           },
           {
             "name": "Yandex Music",
@@ -1048,7 +1045,7 @@
           "width": 360,
           "height": 480,
           "x": 47.796875,
-          "y": 121.546875
+          "y": 118.58984375
         }
       }
     }

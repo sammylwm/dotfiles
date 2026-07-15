@@ -80,7 +80,6 @@ hl.window_rule({
 hl.window_rule({ match = { class = "^(zoom)$" }, float = true })
 hl.layer_rule({ match = { namespace = "^(quickshell)$" }, no_anim = true })
 hl.layer_rule({ match = { namespace = "^dms:.*" }, no_anim = true })
-hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 require("dms.colors")
 require("dms.outputs")
 require("dms.layout")
