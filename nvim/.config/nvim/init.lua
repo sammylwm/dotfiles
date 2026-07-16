@@ -5,3 +5,4 @@ vim.api.nvim_create_autocmd("InsertLeave", {
     os.execute("hyprctl switchxkblayout all next")
   end,
 })
+vim.opt.clipboard = "unnamedplus"

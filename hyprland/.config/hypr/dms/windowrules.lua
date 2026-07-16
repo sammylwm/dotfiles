@@ -7,18 +7,18 @@ hl.workspace_rule({ workspace = "special:music", on_created_empty = "yandex-musi
 hl.workspace_rule({ workspace = "special:localsend", on_created_empty = "localsend" })
 
 hl.window_rule({
-  name = "kando",
-  match = {
-      class = "menu.kando.Kando",
-      title = "Kando Menu"
-  },
-  no_blur = true,
-  opaque = true,
-  move = {0, 0},
-  rounding = 0,
-  size = { "100%", "100%" },
-  border_size = 0,
-  no_anim = true,
-  float = true,
-  pin = true
+	name = "kando",
+	match = {
+		class = "menu.kando.Kando",
+		title = "Kando Menu",
+	},
+	no_blur = true,
+	opaque = true,
+	move = { 0, 0 },
+	rounding = 0,
+	size = { "100%", "100%" },
+	border_size = 0,
+	no_anim = true,
+	float = true,
+	pin = true,
 })
