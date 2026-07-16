@@ -1,13 +1,13 @@
 -- DMS user keybind overrides (edit via Control Center or dms; do not remove this header)
 
+hl.unbind("KP_Add")
+hl.bind("KP_Add", hl.dsp.exec_cmd("dms ipc call mpris playPause"), { locked = true, description = "dms ipc call mpris playPause" })
+hl.unbind("KP_Multiply")
+hl.bind("KP_Multiply", hl.dsp.exec_cmd("dms ipc call mpris previous"), { locked = true, description = "dms ipc call mpris previous" })
+hl.unbind("KP_Subtract")
+hl.bind("KP_Subtract", hl.dsp.exec_cmd("dms ipc call mpris next"), { locked = true, description = "dms ipc call mpris next" })
 hl.unbind("SUPER + O")
 hl.bind("SUPER + O", hl.dsp.exec_cmd("dms ipc call dankdash wallpaper"), { description = "Wallpaper Browser" })
-hl.unbind("SUPER + R")
-hl.bind(
-	"SUPER + R",
-	hl.dsp.exec_cmd("dms ipc call spotlight toggle"),
-	{ description = "dms ipc call spotlight toggle" }
-)
 hl.unbind("SUPER + D")
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("tg"))
 hl.unbind("SUPER + L")
@@ -20,18 +20,6 @@ hl.unbind("SUPER + SHIFT + right")
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "r" }))
 hl.unbind("SUPER + SHIFT + up")
 hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "u" }))
-hl.unbind("SUPER + code:20")
-hl.bind(
-	"SUPER + code:20",
-	hl.dsp.window.resize({ x = -100, y = 0, relative = true }),
-	{ description = "Expand window left" }
-)
-hl.unbind("SUPER + code:21")
-hl.bind(
-	"SUPER + code:21",
-	hl.dsp.window.resize({ x = 100, y = 0, relative = true }),
-	{ description = "Shrink window left" }
-)
 hl.unbind("SUPER + down")
 hl.bind("SUPER + down", hl.dsp.focus({ direction = "d" }))
 hl.unbind("SUPER + equal")
@@ -68,6 +56,7 @@ hl.unbind("SUPER + F")
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.unbind("SUPER + Q")
 hl.bind("SUPER + Q", hl.dsp.window.close())
+hl.unbind("SUPER + R")
 hl.unbind("SUPER + SHIFT + E")
 hl.unbind("SUPER + SHIFT + F")
 hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
@@ -79,3 +68,6 @@ hl.unbind("SUPER + bracketleft")
 hl.bind("SUPER + bracketleft", hl.dsp.layout("preselect l"))
 hl.unbind("SUPER + bracketright")
 hl.bind("SUPER + bracketright", hl.dsp.layout("preselect r"))
+hl.unbind("SUPER + code:20")
+hl.unbind("SUPER + code:21")
+hl.unbind("XF86AudioPlay")
