@@ -824,8 +824,8 @@
         "displayPreferences": [
           "all"
         ],
-        "widgetWidth": 937,
-        "widgetHeight": 503,
+        "widgetWidth": 0,
+        "widgetHeight": 0,
         "i18nMap": {
           "Actions": "Actions",
           "Adjust the size of file and folder icons.": "Adjust the size of file and folder icons.",
@@ -983,7 +983,7 @@
           "Create failed": "Create failed",
           "Information": "Information"
         },
-        "i18nToken": 1784029024177,
+        "i18nToken": 1784619460165,
         "customFolderPath": "/home/sammy",
         "folderType": "home"
       },
