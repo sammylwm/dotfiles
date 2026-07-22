@@ -1,6 +1,6 @@
 {
-  "currentThemeName": "custom",
-  "currentThemeCategory": "registry",
+  "currentThemeName": "dynamic",
+  "currentThemeCategory": "dynamic",
   "customThemeFile": "/home/sammy/.config/DankMaterialShell/themes/arcdarkest/theme.json",
   "registryThemeVariants": {},
   "matugenScheme": "scheme-tonal-spot",
@@ -415,7 +415,7 @@
   "matugenTemplateKitty": true,
   "matugenTemplateFoot": true,
   "matugenTemplateAlacritty": true,
-  "matugenTemplateNeovim": false,
+  "matugenTemplateNeovim": true,
   "matugenTemplateWezterm": true,
   "matugenTemplateDgop": true,
   "matugenTemplateKcolorscheme": true,
@@ -424,11 +424,11 @@
   "matugenTemplateZed": true,
   "matugenTemplateNeovimSettings": {
     "dark": {
-      "baseTheme": "github_dark",
+      "baseTheme": "gruvbox",
       "harmony": 0.5
     },
     "light": {
-      "baseTheme": "github_light",
+      "baseTheme": "gruvbox_light",
       "harmony": 0.5
     }
   },
