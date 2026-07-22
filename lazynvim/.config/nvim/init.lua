@@ -6,4 +6,3 @@ vim.api.nvim_create_autocmd("InsertLeave", {
   end,
 })
 vim.opt.clipboard = "unnamedplus"
-vim.keymap.set("i", "jk", "<esc>")
