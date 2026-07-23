@@ -1,5 +1,7 @@
-[plugin]
-deps = []
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "bbac5e7"
+hash = "e3260d0b1feded8c8e3ae3afa1169e30"
 
 [[flavor.deps]]
 use = "matt-dong-123/gruvbox-material"
