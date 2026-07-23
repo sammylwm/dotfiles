@@ -801,10 +801,10 @@
       },
       "positions": {
         "eDP-1": {
-          "width": 320,
-          "height": 200,
-          "x": 755.84375,
-          "y": 726.6796875
+          "width": 355.7265625,
+          "height": 160,
+          "x": 839.02734375,
+          "y": 901.94921875
         },
         "": {
           "width": 320,
@@ -819,7 +819,7 @@
       "id": "dw_1784028997802_4d69uywhj",
       "widgetType": "dmsfilemanager",
       "name": "DMS File Manager",
-      "enabled": true,
+      "enabled": false,
       "config": {
         "displayPreferences": [
           "all"
@@ -1000,7 +1000,7 @@
       "id": "dw_1784029023292_fl7z0nhol",
       "widgetType": "appLauncher",
       "name": "App Launcher",
-      "enabled": true,
+      "enabled": false,
       "config": {
         "displayPreferences": [
           "all"
