@@ -1,11 +1,3 @@
-local bufferline = require("bufferline")
-
-for i = 1, 9 do
-	vim.keymap.set("n", "<A-" .. i .. ">", function()
-		bufferline.go_to(i, true)
-	end, { desc = "Go to buffer " .. i })
-end
-
 vim.keymap.set("n", "<C-w>", function()
 	Snacks.bufdelete()
 end, { desc = "Close current file" })
