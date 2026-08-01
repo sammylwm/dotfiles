@@ -19,5 +19,8 @@
     "appSize": 80,
     "widgetHeight": 522,
     "widgetWidth": 298
+  },
+  "activateLinux": {
+    "enabled": true
   }
 }

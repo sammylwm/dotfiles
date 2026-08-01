@@ -32,7 +32,7 @@
   "firstDayOfWeek": -1,
   "showWeekNumber": false,
   "calendarBackend": "auto",
-  "use24HourClock": true,
+  "clockFormat": "24h",
   "showSeconds": false,
   "padHours12Hour": false,
   "useFahrenheit": false,
@@ -60,6 +60,7 @@
   "blurEnabled": false,
   "blurForegroundLayers": true,
   "blurLayerOutlineOpacity": 0.12,
+  "blurBorderEnabled": true,
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
@@ -200,6 +201,7 @@
   "scrollTitleEnabled": true,
   "mediaAdaptiveWidthEnabled": true,
   "audioVisualizerEnabled": true,
+  "mediaUseAlbumArtAccent": false,
   "audioScrollMode": "volume",
   "audioWheelScrollAmount": 5,
   "audioDeviceScrollVolumeEnabled": false,
@@ -236,12 +238,10 @@
   "greeterEnableFprint": false,
   "greeterEnableU2f": false,
   "greeterWallpaperPath": "",
-  "greeterUse24HourClock": true,
-  "greeterShowSeconds": false,
-  "greeterPadHours12Hour": false,
   "greeterLockDateFormat": "",
   "greeterFontFamily": "",
   "greeterWallpaperFillMode": "",
+  "greeterPamExternallyManaged": false,
   "greeterSyncPending": false,
   "greeterSyncBaseline": {},
   "mediaSize": 1,
@@ -261,6 +261,7 @@
   },
   "appDrawerSectionViewModes": {},
   "niriOverviewOverlayEnabled": true,
+  "niriOverviewLauncherStyle": "full",
   "dankLauncherV2Size": "compact",
   "dankLauncherV2ShowSourceBadges": true,
   "dankLauncherV2BorderEnabled": false,
@@ -298,7 +299,7 @@
       "enabled": true
     }
   ],
-  "networkPreference": "wifi",
+  "networkPreference": "ethernet",
   "iconThemeDark": "System Default",
   "iconThemeLight": "System Default",
   "iconThemePerMode": false,
@@ -381,15 +382,6 @@
   "fadeToDpmsEnabled": true,
   "fadeToDpmsGracePeriod": 5,
   "launchPrefix": "",
-  "brightnessDevicePins": {},
-  "wifiNetworkPins": {
-    "preferredWifi": [
-      "Les-2"
-    ]
-  },
-  "bluetoothDevicePins": {},
-  "audioInputDevicePins": {},
-  "audioOutputDevicePins": {},
   "gtkThemingEnabled": false,
   "qtThemingEnabled": false,
   "syncModeWithPortal": true,
@@ -467,6 +459,7 @@
   "notificationOverlayEnabled": false,
   "notificationPopupShadowEnabled": true,
   "notificationPopupPrivacyMode": false,
+  "notificationForegroundLayers": true,
   "modalDarkenBackground": true,
   "lockScreenShowPowerActions": true,
   "lockScreenShowSystemIcons": true,
@@ -481,6 +474,11 @@
   "maxFprintTries": 15,
   "enableU2f": false,
   "u2fMode": "or",
+  "lockPamPath": "",
+  "lockPamInlineFprint": false,
+  "lockPamInlineU2f": false,
+  "lockPamExternallyManaged": false,
+  "lockU2fPamPath": "",
   "lockScreenInactiveColor": "#000000",
   "lockScreenNotificationMode": 0,
   "lockScreenVideoEnabled": false,
@@ -553,6 +551,7 @@
   "updaterIntervalSeconds": 1800,
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
+  "updaterIgnoredPackages": [],
   "displayNameMode": "system",
   "screenPreferences": {},
   "showOnLastDisplay": {},
@@ -1052,6 +1051,25 @@
           "y": 118.58984375
         }
       }
+    },
+    {
+      "id": "dw_1785522048622_ik7txhvz8",
+      "widgetType": "activateLinux",
+      "name": "Activate Linux Watermark",
+      "enabled": true,
+      "config": {
+        "displayPreferences": [
+          "all"
+        ]
+      },
+      "positions": {
+        "eDP-1": {
+          "width": 400,
+          "height": 200,
+          "x": 1520,
+          "y": 880
+        }
+      }
     }
   ],
   "desktopWidgetGroups": [
@@ -1099,5 +1117,5 @@
   "barInsetPaddingShared": -1,
   "barInsetPaddingSyncAll": false,
   "frameBarInsetPadding": -1,
-  "configVersion": 12
+  "configVersion": 13
 }
