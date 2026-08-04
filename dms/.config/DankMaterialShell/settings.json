@@ -64,10 +64,10 @@
   "blurBorderColor": "outline",
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
-  "wallpaperFillMode": "Fill",
+  "wallpaperFillMode": "Stretch",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
-  "wallpaperBackgroundColorMode": "black",
+  "wallpaperBackgroundColorMode": "white",
   "wallpaperBackgroundCustomColor": "#000000",
   "showLauncherButton": true,
   "showWorkspaceSwitcher": true,
@@ -303,7 +303,7 @@
   "iconThemeDark": "System Default",
   "iconThemeLight": "System Default",
   "iconThemePerMode": false,
-  "lastAppliedIconTheme": "",
+  "lastAppliedIconTheme": "Adwaita",
   "cursorSettings": {
     "theme": "System Default",
     "size": 24,
@@ -553,7 +553,11 @@
   "updaterAllowAUR": true,
   "updaterIgnoredPackages": [],
   "displayNameMode": "system",
-  "screenPreferences": {},
+  "screenPreferences": {
+    "wallpaper": [
+      "all"
+    ]
+  },
   "showOnLastDisplay": {},
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
@@ -616,7 +620,13 @@
         },
         {
           "id": "battery",
-          "enabled": true
+          "enabled": true,
+          "showBatteryPercent": true,
+          "showBatteryPercentOnlyOnBattery": true,
+          "showBatteryTime": true,
+          "showBatteryTimeOnlyOnBattery": true,
+          "batteryPillStyle": false,
+          "batteryPillPercentSign": true
         },
         {
           "id": "controlCenterButton",

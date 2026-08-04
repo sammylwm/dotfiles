@@ -10,8 +10,16 @@ bind.add("super + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 -- === Application Launchers ===
 bind.add({ "super + T", "super + return" }, hl.dsp.exec_cmd("ghostty"))
 bind.add("super + B", hl.dsp.exec_cmd("zen-browser"))
-bind.add("super + R", hl.dsp.exec_cmd("hyprlauncher"))
+-- bind.add("super + R", hl.dsp.exec_cmd("hyprlauncher"))
 bind.add("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"), { description = "ghostty -e yazi" })
+
+-- === DMS-Shell ===
+bind.add("SUPER + O", hl.dsp.exec_cmd("dms ipc call dankdash wallpaper"), { description = "Wallpaper Browser" })
+bind.add(
+	"SUPER + R",
+	hl.dsp.exec_cmd("dms ipc call spotlight toggle"),
+	{ description = "dms ipc call spotlight toggle" }
+)
 
 -- === Window Management ===
 bind.add("super + Q", hl.dsp.window.close())
