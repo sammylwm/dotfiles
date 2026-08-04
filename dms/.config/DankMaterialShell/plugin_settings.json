@@ -22,5 +22,8 @@
   },
   "activateLinux": {
     "enabled": true
+  },
+  "happControl": {
+    "enabled": true
   }
 }
