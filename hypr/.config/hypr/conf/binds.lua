@@ -5,6 +5,8 @@ for i = 1, 9 do
 	bind.add("super + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
 end
 
+bind.add("super + 0", hl.dsp.focus({ workspace = 10 }))
+bind.add("super + SHIFT + 0", hl.dsp.window.move({ workspace = 10 }))
 -- === Application Launchers ===
 bind.add({ "super + T", "super + return" }, hl.dsp.exec_cmd("ghostty"))
 bind.add("super + B", hl.dsp.exec_cmd("zen-browser"))
