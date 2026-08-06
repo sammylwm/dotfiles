@@ -4,13 +4,14 @@ SETUVAR --export ANDROID_HOME:/home/sammy/Android/Sdk
 SETUVAR --export --path PATH:/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/sammy/Android/Sdk/platform\x2dtools\x1e/home/sammy/Android/Sdk/cmdline\x2dtools/latest/bin
 SETUVAR --export --path QML2_IMPORT_PATH:/usr/lib/qt6/qml
 SETUVAR --export --path QML_IMPORT_PATH:/usr/lib/qt6/qml
+SETUVAR --export SSH_AUTH_SOCK:/home/sammy/\x2ebitwarden\x2dssh\x2dagent\x2esock
 SETUVAR --export TCL_LIBRARY:/usr/lib/tcl8\x2e6
 SETUVAR --export TK_LIBRARY:/usr/lib/tk8\x2e6
 SETUVAR __fish_initialized:4300
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/sammy/\x2ecargo/bin
+SETUVAR fish_user_paths:/home/sammy/Android/Sdk/platform\x2dtools\x1e/home/sammy/Android/Sdk/cmdline\x2dtools/latest/bin\x1e/home/sammy/\x2ecargo/bin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute

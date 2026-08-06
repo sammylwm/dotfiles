@@ -1,6 +1,7 @@
 local ensure_installed = {
   "lua-language-server",
   "pyright",
+  "kotlin-lsp",
 }
 
 local installed_package_names = require("mason-registry").get_installed_package_names()

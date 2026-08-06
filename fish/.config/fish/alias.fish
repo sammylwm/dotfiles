@@ -13,3 +13,17 @@ alias logout="hyprshutdown"
 alias nano="nvim"
 alias nv='nvim $argv.lua'
 alias yay="paru"
+
+# Birthday Calendar: upload AAB and only "What's new" to Closed testing (Alpha)
+function birthday_publish
+    command fastlane supply \
+        --aab /home/sammy/it/birthday_calendar/build/app/outputs/bundle/release/app-release.aab \
+        --json_key /home/sammy/Documents/birthday-calendar-a0913-589cfd7cf636.json \
+        --package_name com.sammy.birthday_calendar \
+        --track alpha \
+        --release_status completed \
+        --metadata_path /home/sammy/it/birthday_calendar/metadata \
+        --skip_upload_metadata true \
+        --skip_upload_images true \
+        --skip_upload_screenshots true
+end

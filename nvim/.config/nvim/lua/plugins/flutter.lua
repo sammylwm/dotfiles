@@ -13,6 +13,7 @@ return {
       { "<leader>Fd", "<cmd>FlutterDevices<cr>", desc = "Flutter devices" },
       { "<leader>Fe", "<cmd>FlutterEmulators<cr>", desc = "Flutter emulators" },
       { "<leader>Fo", "<cmd>FlutterOutlineToggle<cr>", desc = "Flutter outline" },
+      { "<leader>Ft", "<cmd>FlutterLogToggle<cr>", desc = "Flutter log toggle" },
       { "<leader>Fq", "<cmd>FlutterQuit<cr>", desc = "Flutter quit" },
     },
     opts = {
@@ -24,6 +25,7 @@ return {
         enabled = true,
         notify_errors = true,
         focus_on_open = false,
+        open_cmd = "15split",
       },
       lsp = {
         settings = {
