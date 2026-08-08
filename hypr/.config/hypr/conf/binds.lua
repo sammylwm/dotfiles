@@ -59,3 +59,24 @@ bind.add("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true, descriptio
 
 -- === Screenshots ===
 bind.add("Print", hl.dsp.exec_cmd("hyprshot -m region"))
+
+-- === Mouse ===
+hl.bind("ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })
+
+hl.bind("SUPER + P", function()
+	hl.dispatch(hl.dsp.window.float({
+		action = "set",
+	}))
+
+	hl.dispatch(hl.dsp.window.resize({
+		x = 720,
+		y = 405,
+	}))
+	hl.dispatch(hl.dsp.window.pin({
+		action = "toggle",
+	}))
+
+	hl.dispatch(hl.dsp.window.alter_zorder({
+		mode = "top",
+	}))
+end)
