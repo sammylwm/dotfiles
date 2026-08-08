@@ -20,14 +20,11 @@ bind.add(
 	hl.dsp.exec_cmd("dms ipc call spotlight toggle"),
 	{ description = "dms ipc call spotlight toggle" }
 )
+bind.add("super + V", hl.dsp.exec_cmd("dms ipc clipboard open"))
 
 -- === Window Management ===
 bind.add("super + Q", hl.dsp.window.close(), { dont_inhibit = true })
-bind.add(
-	"super + F",
-	hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }),
-	{ dont_inhibit = true }
-)
+bind.add("super + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }), { dont_inhibit = true })
 bind.add("super + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 bind.add("super + SHIFT + T", hl.dsp.window.float({ action = "toggle" }))
 bind.add("super + W", hl.dsp.group.toggle())
