@@ -25,3 +25,7 @@ output_path = '~/.config/zen/68cf6g56.Default (release)/chrome/userContent.css'
 [templates.telegram]
 input_path = "~/.config/matugen/templates/telegram.tdesktop-theme"
 output_path = "~/.config/matugen/themes/telegram.tdesktop-theme"
+
+[templates.xmcl]
+input_path = "~/.config/matugen/templates/xmcl.json"
+output_path = "~/.config/xmcl/theme.json"
