@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export ANDROID_HOME:/home/sammy/Android/Sdk
+SETUVAR --export GEMINI_API_KEY:AQ\x2eAb8RN6Iqe3kqvKASueBhjFePGqjo_N2JsgHvbpIqv3WM1\x2d89Gg
 SETUVAR --export --path PATH:/usr/local/sbin\x1e/usr/local/bin\x1e/usr/bin\x1e/var/lib/flatpak/exports/bin\x1e/usr/bin/site_perl\x1e/usr/bin/vendor_perl\x1e/usr/bin/core_perl\x1e/home/sammy/Android/Sdk/platform\x2dtools\x1e/home/sammy/Android/Sdk/cmdline\x2dtools/latest/bin
 SETUVAR --export --path QML2_IMPORT_PATH:/usr/lib/qt6/qml
 SETUVAR --export --path QML_IMPORT_PATH:/usr/lib/qt6/qml
