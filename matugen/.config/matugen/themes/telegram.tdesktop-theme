@@ -11,26 +11,26 @@
 // Initial Repository: https://github.com/nmsmith22389/dracula-telegram
 
 // Color Pallete
-pBg: #0e1513;
-pSelection: #252b29;
-pFg: #dee4e0;
-pComment: #bfc9c4;
-pCyan: #85d6bf;
-pGreen: #a9cbe3;
-pOrange: #b2ccc3;
-pPink: #294a5e;
-pPurple: #005142;
+pBg: #111318;
+pSelection: #282a2f;
+pFg: #e2e2e9;
+pComment: #c4c6d0;
+pCyan: #aac7ff;
+pGreen: #dcbce0;
+pOrange: #bec7dc;
+pPink: #563e5c;
+pPurple: #274777;
 pRed: #ffb4ab;
-pYellow: #334c44;
-pAnthracite: #090f0d;
+pYellow: #3e4759;
+pAnthracite: #0c0e13;
 
 // Material 3 message bubbles
-pMsgIn: #1b211f;
-pMsgInSelected: #252b29;
-pMsgOut: #005142;
-pMsgOutSelected: #85d6bf;
-pMsgInFg: #dee4e0;
-pMsgOutFg: #a1f2db;
+pMsgIn: #1d2024;
+pMsgInSelected: #282a2f;
+pMsgOut: #274777;
+pMsgOutSelected: #aac7ff;
+pMsgInFg: #e2e2e9;
+pMsgOutFg: #d6e3ff;
 
 // Color Vars
 rippleBgHeavy: #ffffff40;

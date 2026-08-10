@@ -35,3 +35,13 @@ hl.window_rule({
 
 	opacity = "0.8 0.8",
 })
+
+hl.window_rule({
+	match = {
+		initial_class = "^jetbrains-toolbox$",
+		xwayland = true,
+	},
+	tile = true,
+	no_max_size = true,
+	suppress_event = "x11configurerequest",
+})
