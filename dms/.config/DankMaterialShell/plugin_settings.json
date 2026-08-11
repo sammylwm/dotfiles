@@ -25,5 +25,8 @@
   },
   "happControl": {
     "enabled": true
+  },
+  "converter": {
+    "enabled": true
   }
 }

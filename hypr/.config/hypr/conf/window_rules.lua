@@ -20,22 +20,22 @@ hl.window_rule({
 })
 hl.window_rule({ match = { class = "^(zoom)$" }, float = true })
 hl.layer_rule({ match = { namespace = "^(quickshell)$" }, no_anim = true })
-hl.window_rule({
-	match = {
-		class = "io.github.kukuruzka165.materialgram",
-	},
-
-	opacity = "0.8 0.8",
-})
-
-hl.window_rule({
-	match = {
-		class = "zen",
-	},
-
-	opacity = "0.8 0.8",
-})
-
+-- hl.window_rule({
+-- 	match = {
+-- 		class = "io.github.kukuruzka165.materialgram",
+-- 	},
+--
+-- 	opacity = "0.8 0.8",
+-- })
+--
+-- hl.window_rule({
+-- 	match = {
+-- 		class = "zen",
+-- 	},
+--
+-- 	opacity = "0.8 0.8",
+-- })
+--
 hl.window_rule({
 	match = {
 		initial_class = "^jetbrains-toolbox$",
