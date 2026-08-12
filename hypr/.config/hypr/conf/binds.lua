@@ -32,7 +32,7 @@ bind.add("super + W", hl.dsp.group.toggle())
 -- === Audio Controls ===
 bind.add(
 	"XF86AudioRaiseVolume",
-	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"),
+	hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ -l 1"),
 	{ locked = true, repeating = true }
 )
 bind.add(
