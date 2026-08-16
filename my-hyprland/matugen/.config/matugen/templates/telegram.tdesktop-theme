@@ -11,26 +11,26 @@
 // Initial Repository: https://github.com/nmsmith22389/dracula-telegram
 
 // Color Pallete
-pBg: #0e1513;
-pSelection: #252b29;
-pFg: #dee4e0;
-pComment: #bfc9c4;
-pCyan: #85d6bf;
-pGreen: #a9cbe3;
-pOrange: #b2ccc3;
-pPink: #294a5e;
-pPurple: #005142;
-pRed: #ffb4ab;
-pYellow: #334c44;
-pAnthracite: #090f0d;
+pBg: {{colors.surface.default.hex}};
+pSelection: {{colors.surface_container_high.default.hex}};
+pFg: {{colors.on_surface.default.hex}};
+pComment: {{colors.on_surface_variant.default.hex}};
+pCyan: {{colors.primary.default.hex}};
+pGreen: {{colors.tertiary.default.hex}};
+pOrange: {{colors.secondary.default.hex}};
+pPink: {{colors.tertiary_container.default.hex}};
+pPurple: {{colors.primary_container.default.hex}};
+pRed: {{colors.error.default.hex}};
+pYellow: {{colors.secondary_container.default.hex}};
+pAnthracite: {{colors.surface_container_lowest.default.hex}};
 
 // Material 3 message bubbles
-pMsgIn: #1b211f;
-pMsgInSelected: #252b29;
-pMsgOut: #005142;
-pMsgOutSelected: #85d6bf;
-pMsgInFg: #dee4e0;
-pMsgOutFg: #a1f2db;
+pMsgIn: {{colors.surface_container.default.hex}};
+pMsgInSelected: {{colors.surface_container_high.default.hex}};
+pMsgOut: {{colors.primary_container.default.hex}};
+pMsgOutSelected: {{colors.primary.default.hex}};
+pMsgInFg: {{colors.on_surface.default.hex}};
+pMsgOutFg: {{colors.on_primary_container.default.hex}};
 
 // Color Vars
 rippleBgHeavy: #ffffff40;
