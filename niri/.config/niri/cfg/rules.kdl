@@ -1,5 +1,0 @@
-window-rule {
-    open-maximized true
-    geometry-corner-radius 15.0
-    clip-to-geometry true
-}
