@@ -2,11 +2,11 @@ vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-vim.api.nvim_create_autocmd("InsertLeave", {
-	callback = function()
-		os.execute("hyprctl switchxkblayout all 0")
-	end,
-})
+-- vim.api.nvim_create_autocmd("InsertLeave", {
+-- 	callback = function()
+-- 		os.execute("hyprctl switchxkblayout all 0")
+-- 	end,
+-- })
 vim.opt.clipboard = "unnamedplus"
 vim.opt.expandtab = true
 vim.opt.number = true
