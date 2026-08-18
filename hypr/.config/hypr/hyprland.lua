@@ -4,6 +4,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("dbus-update-activation-environment --systemd --all")
 	hl.exec_cmd("systemctl --user start hyprland-session.target")
 	hl.exec_cmd("dms run > /tmp/sammy-shell.log 2>&1")
+	hl.exec_cmd("hyprpm reload -n")
 end)
 
 require("conf")

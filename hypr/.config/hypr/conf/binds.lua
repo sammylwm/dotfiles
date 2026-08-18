@@ -1,7 +1,7 @@
 local bind = require("conf.functions")
 
 for i = 1, 9 do
-	bind.add("super + " .. i, hl.dsp.focus({ workspace = i }))
+	bind.add("super + " .. i, hl.dsp.focus({ workspace = i }), { dont_inhibit = true })
 	bind.add("super + SHIFT + " .. i, hl.dsp.window.move({ workspace = i }))
 end
 
@@ -28,6 +28,23 @@ bind.add("super + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "
 bind.add("super + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 bind.add("super + SHIFT + T", hl.dsp.window.float({ action = "toggle" }))
 bind.add("super + W", hl.dsp.group.toggle())
+bind.add("SUPER + P", function()
+	hl.dispatch(hl.dsp.window.float({
+		action = "set",
+	}))
+
+	hl.dispatch(hl.dsp.window.resize({
+		x = 720,
+		y = 405,
+	}))
+	hl.dispatch(hl.dsp.window.pin({
+		action = "toggle",
+	}))
+
+	hl.dispatch(hl.dsp.window.alter_zorder({
+		mode = "top",
+	}))
+end)
 
 -- === Audio Controls ===
 bind.add(
@@ -61,22 +78,13 @@ bind.add("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true, descriptio
 bind.add("Print", hl.dsp.exec_cmd("hyprshot -m region"))
 
 -- === Mouse ===
-hl.bind("ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })
-
-hl.bind("SUPER + P", function()
-	hl.dispatch(hl.dsp.window.float({
-		action = "set",
-	}))
-
-	hl.dispatch(hl.dsp.window.resize({
-		x = 720,
-		y = 405,
-	}))
-	hl.dispatch(hl.dsp.window.pin({
-		action = "toggle",
-	}))
-
-	hl.dispatch(hl.dsp.window.alter_zorder({
-		mode = "top",
-	}))
-end)
+bind.add("ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })
+if hl.plugin.hyprexpo then
+	for _, direction in ipairs({ "up", "down" }) do
+		hl.plugin.hyprexpo.gesture({
+			fingers = 3,
+			direction = direction,
+			action = "expo",
+		})
+	end
+end

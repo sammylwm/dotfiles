@@ -10,7 +10,6 @@ alias almrev="alembic revision --autogenerate -m"
 alias almup="alembic upgrade head"
 alias flutter_build="flutter pub run build_runner build --delete-conflicting-outputs"
 alias dcdev="docker compose -f docker-compose.dev.yml"
-alias sshp="ssh -p 1009 sammy@lednevs.ru"
 alias logout="hyprshutdown"
 alias nano="nvim"
 alias nv='nvim $argv.lua'

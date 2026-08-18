@@ -35,5 +35,8 @@
 
   "git_added": "{{colors.primary.default.hex}}",
   "git_modified": "{{colors.secondary.default.hex}}",
-  "git_deleted": "{{colors.error.default.hex}}"
+  "git_deleted": "{{colors.error.default.hex}}",
+
+  "snacks_file": "{{colors.on_primary_container.default.hex}}",
+  "snacks_dir": "{{colors.primary.default.hex}}"
 }

@@ -55,6 +55,31 @@
   --arrowpanel-border-color: {{colors.surface.default.hex}} !important;
 }
 
+/* Let HyprGlass show through Zen's new-tab page and search field. */
+@-moz-document url("about:newtab"), url("about:home"), url("about:blank") {
+  :root {
+    --newtab-background-color: transparent !important;
+    --newtab-background-color-secondary: transparent !important;
+  }
+
+  html,
+  body,
+  #root,
+  .outer-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  .search-wrapper .search-handoff-button,
+  .search-wrapper .search-handoff-button:focus,
+  .search-wrapper input {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: 1px solid color-mix(in srgb, {{colors.outline.default.hex}} 65%, transparent) !important;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 20%) !important;
+  }
+}
+
 /* Selection highlight */
 ::selection {
   color: {{colors.on_primary.default.hex}} !important;
@@ -218,5 +243,43 @@
   .addon-description,
   .addon-detail {
     color: var(--text-color) !important;
+  }
+}
+
+/* Expose HyprGlass behind the root canvas of regular websites. */
+@-moz-document url-prefix("http://"), url-prefix("https://") {
+  :root,
+  html,
+  body,
+  #root,
+  #app,
+  #__next {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+}
+
+/* Google paints additional full-page and search-box backgrounds. */
+@-moz-document domain("google.com") {
+  :root,
+  html,
+  body,
+  #main,
+  #cnt,
+  #rcnt,
+  #searchform,
+  .sfbg,
+  .minidiv .sfbg {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+
+  .A8SBwf,
+  .RNNXgb,
+  .aajZCb {
+    background: transparent !important;
+    background-color: transparent !important;
+    border-color: color-mix(in srgb, {{colors.outline.default.hex}} 65%, transparent) !important;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 20%) !important;
   }
 }
