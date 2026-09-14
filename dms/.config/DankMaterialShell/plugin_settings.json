@@ -28,5 +28,8 @@
   },
   "converter": {
     "enabled": true
+  },
+  "amneziaControl": {
+    "enabled": true
   }
 }

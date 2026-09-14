@@ -326,7 +326,7 @@
       "enabled": true
     }
   ],
-  "networkPreference": "ethernet",
+  "networkPreference": "wifi",
   "iconThemeDark": "System Default",
   "iconThemeLight": "System Default",
   "iconThemePerMode": false,
@@ -538,6 +538,14 @@
       "matchType": "exact",
       "action": "mute",
       "urgency": "default"
+    },
+    {
+      "enabled": true,
+      "field": "appName",
+      "pattern": "Hyprshot",
+      "matchType": "exact",
+      "action": "mute",
+      "urgency": "default"
     }
   ],
   "notificationFocusedMonitor": false,
@@ -617,7 +625,7 @@
       ],
       "rightWidgets": [
         {
-          "id": "happControl",
+          "id": "amneziaControl",
           "enabled": true
         },
         {

@@ -19,6 +19,7 @@ hl.window_rule({
 	float = true,
 })
 hl.window_rule({ match = { class = "^(zoom)$" }, float = true })
+hl.window_rule({match = {class = "AmneziaVPN"}, float = false, fullscreen_state = 1 })
 hl.layer_rule({ match = { namespace = "^(quickshell)$" }, no_anim = true })
 -- hl.window_rule({
 -- 	match = {
