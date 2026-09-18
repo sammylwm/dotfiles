@@ -1,7 +1,9 @@
 vim.g.mapleader = " "
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-
+vim.api.nvim_set_hl(0, "Visual", {
+    bg = "#45475a",
+})
 -- vim.api.nvim_create_autocmd("InsertLeave", {
 -- 	callback = function()
 -- 		os.execute("hyprctl switchxkblayout all 0")

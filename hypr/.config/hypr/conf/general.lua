@@ -14,6 +14,7 @@ hl.config({
 		gaps_out = 5,
 		border_size = 2,
 		layout = "dwindle",
+		-- layout = "lua:columns",
 	},
 	decoration = {
 		rounding = 12,
