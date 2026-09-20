@@ -33,3 +33,15 @@ vim.opt.langmap = vim.fn.join({
 	escape(ru_shift) .. ";" .. escape(en_shift),
 	escape(ru) .. ";" .. escape(en),
 }, ",")
+
+-- Подключение clangd через встроенный LSP
+vim.lsp.config.clangd = {
+  cmd = { "clangd" },
+  filetypes = { "c", "cpp", "objc", "objcpp" },
+  root_dir = function(fname)
+    local util = require('lspconfig.util')
+    return util.root_pattern("compile_commands.json", "compile_flags.txt", ".git")(fname) or util.path.dirname(fname)
+  end,
+}
+vim.lsp.enable('clangd')
+
