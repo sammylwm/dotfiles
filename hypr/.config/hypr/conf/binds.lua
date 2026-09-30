@@ -76,6 +76,7 @@ bind.add("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true, descriptio
 
 -- === Screenshots ===
 bind.add("Print", hl.dsp.exec_cmd("HYPRSHOT_DIR=$HOME/Pictures/Screenshots hyprshot -m region"))
+bind.add("CTRL + Print", hl.dsp.exec_cmd("HYPRSHOT_DIR=$HOME/Pictures/Screenshots hyprshot -m active -m window"))
 
 -- === Mouse ===
 bind.add("ALT + mouse:273", hl.dsp.window.resize(), { mouse = true })
