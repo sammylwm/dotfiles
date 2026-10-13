@@ -1,5 +1,4 @@
 alias pub="flutter pub"
-alias cd="z"
 alias c="clear"
 alias ls="eza"
 alias aliascf="nano ~/.config/fish/alias.fish"
