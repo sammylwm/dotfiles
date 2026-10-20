@@ -1,5 +1,9 @@
+
+
 # Font Configuration
-font-size = 12
+# font-family = Orthodox
+font-size = 14
+font-style = Regular
 
 working-directory = ~
 
@@ -7,9 +11,10 @@ working-directory = ~
 window-decoration = false
 window-padding-x = 12
 window-padding-y = 12
-background-opacity = 0.15
+background-opacity = 0.56
 background-opacity-cells = true
-background-blur-radius = 0 
+background-blur-radius = 20
+
 # Cursor Configuration
 cursor-style = block
 cursor-style-blink = true
@@ -46,10 +51,33 @@ shell-integration = detect
 shell-integration-features = cursor,sudo,title,no-cursor
 keybind = shift+enter=text:\n
 
-# Rando stuff
+# Random stuff
 gtk-single-instance = true
 
 # Dank color generation
 theme = dankcolors
 keybind = ctrl+alt+c=copy_to_clipboard
 keybind = ctrl+v=paste_from_clipboard
+
+# High contrast text
+foreground = #FFF4D6
+selection-foreground = #FFFFFF
+selection-background = #66552F
+
+# Bright terminal palette
+palette = 0=#282828
+palette = 1=#FF6B6B
+palette = 2=#B8E986
+palette = 3=#FFD166
+palette = 4=#82AAFF
+palette = 5=#D6A4FF
+palette = 6=#76E4F7
+palette = 7=#FFF4D6
+palette = 8=#928374
+palette = 9=#FF8585
+palette = 10=#C5F59D
+palette = 11=#FFE08A
+palette = 12=#A4C2FF
+palette = 13=#E2B8FF
+palette = 14=#9AF0FF
+palette = 15=#FFFFFF

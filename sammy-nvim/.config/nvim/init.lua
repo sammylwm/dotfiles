@@ -1,6 +1,13 @@
 local lazy_opts = {
-	spec = { { "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" } },
-	import = "lazyvimx.extras.core.all",
+	spec = {
+		{ "lazyvimx/nvim", name = "lazyvimx", import = "lazyvimx.boot" },
+		{ import = "lazyvimx.extras.motions.langmapper" },
+		{ import = "lazyvimx.extras.motions.better-move-between-words" },
+		{ import = "lazyvimx.extras.motions.langmapper" },
+		{ import = "lazyvimx.extras.motions.sibling-swap" },
+		{ import = "lazyvimx.extras.motions.sibling-move" },
+		{ import = "lazyvimx.extras.lang.qml" },
+	},
 	install = { colorscheme = { "catppuccin", "tokyonight" } },
 	checker = { enabled = true, notify = false },
 	change_detection = { enabled = false },

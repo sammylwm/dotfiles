@@ -3,7 +3,10 @@ return {
 	version = "1.*",
 	event = "InsertEnter",
 	opts = {
-		keymap = { ["<Tab>"] = { "accept" } },
+		keymap = {
+			preset = "default",
+			["<CR>"] = { "accept", "fallback" },
+		},
 		appearance = {
 			nerd_font_variant = "mono",
 		},

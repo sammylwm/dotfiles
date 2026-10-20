@@ -13,19 +13,19 @@ output_path = '~/obsidian/.obsidian/snippets/matugen.css'
 [templates.yazi]
 input_path = '~/.config/matugen/templates/yazi-theme.toml'
 output_path = '~/.config/yazi/theme.toml'
-
-[templates.zen-userchrome] 
-input_path = '~/.config/matugen/templates/zen-userchrome.css'
-output_path = '~/.config/zen/68cf6g56.Default (release)/chrome/userChrome.css'
-
-[templates.zen-usercontent]
-input_path = '~/.config/matugen/templates/zen-usercontent.css'
-output_path = '~/.config/zen/68cf6g56.Default (release)/chrome/userContent.css'
+#
+# [templates.zen-userchrome] 
+# input_path = '~/.config/matugen/templates/zen-userchrome.css'
+# output_path = '~/.config/zen/68cf6g56.Default (release)/chrome/userChrome.css'
+#
+# [templates.zen-usercontent]
+# input_path = '~/.config/matugen/templates/zen-usercontent.css'
+# output_path = '~/.config/zen/68cf6g56.Default (release)/chrome/userContent.css'
 
 [templates.telegram]
 input_path = "~/.config/matugen/templates/telegram.tdesktop-theme"
 output_path = "~/.config/matugen/themes/telegram.tdesktop-theme"
 
-[templates.xmcl]
-input_path = "~/.config/matugen/templates/xmcl.json"
-output_path = "~/.config/xmcl/theme.json"
+# [templates.xmcl]
+# input_path = "~/.config/matugen/templates/xmcl.json"
+# output_path = "~/.config/xmcl/theme.json"

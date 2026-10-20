@@ -38,5 +38,9 @@
   "git_deleted": "{{colors.error.default.hex}}",
 
   "snacks_file": "{{colors.on_primary_container.default.hex}}",
-  "snacks_dir": "{{colors.primary.default.hex}}"
+  "snacks_dir": "{{colors.primary.default.hex}}",
+  "primary_fixed_dim": "{{colors.primary.default.hex}}",
+  "inverse_primary": "{{colors.inverse_primary.default.hex}}",
+  "secondary_fixed_dim": "{{colors.secondary.default.hex}}",
+  "tertiary_fixed_dim": "{{colors.tertiary.default.hex}}"
 }
