@@ -4,9 +4,9 @@
 # font-family = Orthodox
 font-size = 14
 font-style = Regular
+window-inherit-working-directory = false
 
 working-directory = ~
-
 # Window Configuration
 window-decoration = false
 window-padding-x = 12

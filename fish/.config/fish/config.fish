@@ -12,3 +12,6 @@ fish_add_path /home/sammy/Android/Sdk/platform-tools /home/sammy/Android/Sdk/cmd
 
 # Created by `pipx` on 2026-07-22 19:06:59
 set PATH $PATH /home/sammy/.local/bin
+if set -q GHOSTTY_RESOURCES_DIR
+    source "$GHOSTTY_RESOURCES_DIR/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish"
+end
