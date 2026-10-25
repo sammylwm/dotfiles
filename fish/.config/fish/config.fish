@@ -15,3 +15,4 @@ set PATH $PATH /home/sammy/.local/bin
 if set -q GHOSTTY_RESOURCES_DIR
     source "$GHOSTTY_RESOURCES_DIR/shell-integration/fish/vendor_conf.d/ghostty-shell-integration.fish"
 end
+fish_add_path ~/.local/bin

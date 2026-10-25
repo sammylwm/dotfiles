@@ -33,3 +33,4 @@ vim.opt.rtp:prepend(lazy_path)
 require("lazy").setup(lazy_opts)
 vim.opt.clipboard = "unnamedplus"
 vim.lsp.semantic_tokens.enable(false)
+require("config.functions")
