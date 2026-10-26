@@ -669,7 +669,34 @@
         },
         {
           "id": "controlCenterButton",
-          "enabled": true
+          "enabled": true,
+          "showNetworkIcon": true,
+          "showBluetoothIcon": true,
+          "showAudioIcon": true,
+          "showAudioPercent": false,
+          "showVpnIcon": true,
+          "showBrightnessIcon": false,
+          "showBrightnessPercent": false,
+          "showMicIcon": false,
+          "showMicPercent": true,
+          "showBatteryIcon": false,
+          "showPrinterIcon": false,
+          "showScreenSharingIcon": true,
+          "showIdleInhibitorIcon": false,
+          "showDoNotDisturbIcon": false,
+          "controlCenterGroupOrder": [
+            "network",
+            "vpn",
+            "bluetooth",
+            "audio",
+            "microphone",
+            "brightness",
+            "battery",
+            "printer",
+            "screenSharing",
+            "idleInhibitor",
+            "doNotDisturb"
+          ]
         }
       ],
       "spacing": 4,
