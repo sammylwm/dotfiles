@@ -7,6 +7,7 @@ local lazy_opts = {
 		{ import = "lazyvimx.extras.motions.sibling-swap" },
 		{ import = "lazyvimx.extras.motions.sibling-move" },
 		{ import = "lazyvimx.extras.lang.qml" },
+		{ import = "lazyvim.plugins.extras.lang.python" },
 	},
 	install = { colorscheme = { "catppuccin", "tokyonight" } },
 	checker = { enabled = true, notify = false },
