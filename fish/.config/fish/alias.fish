@@ -14,6 +14,7 @@ alias logout="hyprshutdown"
 alias nano="nvim"
 alias nv='nvim $argv.lua'
 alias yay="paru"
+alias sshp="ssh root@13.143.128.122"
 
 # Birthday Calendar: upload AAB and only "What's new" to Closed testing (Alpha)
 function birthday_publish

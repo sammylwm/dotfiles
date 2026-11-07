@@ -3,7 +3,7 @@
   "currentThemeCategory": "dynamic",
   "customThemeFile": "/home/sammy/.config/DankMaterialShell/themes/arcdarkest/theme.json",
   "registryThemeVariants": {},
-  "matugenScheme": "scheme-content",
+  "matugenScheme": "scheme-monochrome",
   "matugenContrast": 0,
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
