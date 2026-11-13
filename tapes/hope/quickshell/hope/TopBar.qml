@@ -16,9 +16,6 @@ PanelWindow {
     }
 
     RowLayout {
-        // Widgets.Clock {
-        // }
-
         anchors.fill: parent
         anchors.leftMargin: 16
         anchors.rightMargin: 16
@@ -37,6 +34,10 @@ PanelWindow {
             Layout.fillWidth: true
         }
 
+    }
+
+    Clock {
+        anchors.centerIn: parent
     }
 
 }
