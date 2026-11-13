@@ -40,4 +40,16 @@ PanelWindow {
         anchors.centerIn: parent
     }
 
+    RowLayout {
+        anchors.leftMargin: 16
+        anchors.rightMargin: 16
+        anchors.verticalCenter: parent.verticalCenter
+        spacing: 16
+        anchors.right: parent.right
+
+        Wifi {
+        }
+
+    }
+
 }
