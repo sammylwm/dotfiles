@@ -3,5 +3,5 @@ name = "sammy"
 desc = "Мои конфиги Hyprland, Fish, Foot, Ghostty, Matugen, Neovim, Starship и Yazi"
 
 [hooks]
-insert = ["hyprctl reload", "dms kill || true", "dms run"]
+insert = ["hyprctl reload", "dms kill || true", "sh -c 'nohup dms run </dev/null >/tmp/dms.log 2>&1 &'"]
 eject = ["hyprctl reload", "dms kill || true"]
