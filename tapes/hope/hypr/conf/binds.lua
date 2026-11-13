@@ -14,7 +14,7 @@ bind.add("super + B", hl.dsp.exec_cmd("zen-browser"))
 bind.add("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"), { description = "ghostty -e yazi" })
 
 -- === DMS-Shell ===
-bind.add("SUPER + O", hl.dsp.exec_cmd("dms ipc call dankdash wallpaper"), { description = "Wallpaper Browser" })
+bind.add("SUPER + O", hl.dsp.exec_cmd("waypaper"), {})
 bind.add("SUPER + R", hl.dsp.exec_cmd("hyprlauncher"), { description = "dms ipc call spotlight toggle" })
 bind.add("super + V", hl.dsp.exec_cmd("dms ipc clipboard open"))
 
