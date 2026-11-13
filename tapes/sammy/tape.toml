@@ -1,0 +1,7 @@
+[tape]
+name = "sammy"
+desc = "Мои конфиги Hyprland, Fish, Foot, Ghostty, Matugen, Neovim, Starship и Yazi"
+
+[hooks]
+insert = ["hyprctl reload", "dms kill || true", "dms run"]
+eject = ["hyprctl reload", "dms kill || true"]
