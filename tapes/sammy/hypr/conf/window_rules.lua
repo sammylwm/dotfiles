@@ -1,5 +1,5 @@
 hl.window_rule({ match = { class = "^(org\\.wezfurlong\\.wezterm)$" }, tile = true })
-hl.window_rule({ match = { class = "^(org\\.gnome\\.)" }, rounding = 12 })
+hl.window_rule({ match = { class = "^(org\\.gnome\\.)" }, rounding = 10 })
 hl.window_rule({ match = { class = "^(gnome-control-center)$" }, tile = true })
 hl.window_rule({ match = { class = "^(pavucontrol)$" }, tile = true })
 hl.window_rule({ match = { class = "^(nm-connection-editor)$" }, tile = true })
