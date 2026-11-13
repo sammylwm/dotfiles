@@ -1,0 +1,68 @@
+{
+  "bar": {
+    "kind": "quickshell"
+  },
+  "colors": {
+    "theme": "dark/space"
+  },
+  "config": {
+    "misc": {
+      "key_press_enables_dpms": true,
+      "mouse_move_enables_dpms": true,
+      "vrr": 0
+    }
+  },
+  "cursor": {
+    "theme": "Qogir-Dark"
+  },
+  "quickshell": {
+    "style": "split"
+  },
+  "space": {
+    "land": {
+      "comets": 3,
+      "dusk": 0.75,
+      "flora": 2,
+      "height": 1,
+      "relief": 0.65,
+      "rocks": 2,
+      "snow": 1,
+      "treeSize": 1.1
+    },
+    "world": {
+      "hue": 0.5615277886390686,
+      "palette": {
+        "colors": {
+          "color0": "#24283b",
+          "color1": "#f7768e",
+          "color10": "#9ece6a",
+          "color11": "#e0af68",
+          "color12": "#7aa2f7",
+          "color13": "#7aa2f7",
+          "color14": "#7dcfff",
+          "color15": "#c0caf5",
+          "color2": "#9ece6a",
+          "color3": "#e0af68",
+          "color4": "#7aa2f7",
+          "color5": "#bb9af7",
+          "color6": "#7dcfff",
+          "color7": "#c0caf5",
+          "color8": "#565f89",
+          "color9": "#7dcfff"
+        },
+        "custom": true,
+        "name": "Space",
+        "special": {
+          "background": "#24283b",
+          "cursor": "#c0caf5",
+          "foreground": "#c0caf5"
+        }
+      },
+      "random": false,
+      "theme": "tokyonight"
+    }
+  },
+  "utilities": {
+    "clock24": false
+  }
+}

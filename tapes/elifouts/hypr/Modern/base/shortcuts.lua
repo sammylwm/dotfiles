@@ -1,0 +1,15 @@
+require("binds")
+local mainMod = "SUPER"
+
+hl.bind(mainMod .. " + SUPER_L", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh launcher"), { release = true })
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh profiles"))
+hl.bind(mainMod .. " + l", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/lock.sh"))
+hl.bind("ALT + TAB", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh home"))
+hl.bind("ALT + w", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh wallpaper"))
+hl.bind("ALT + a", hl.dsp.exec_cmd("~/.config/hypr/utilities/bars/bar.sh toggle"))
+hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh overview"))
+hl.bind("ALT + D", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh widgets"))
+hl.bind("ALT + S", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh settings"))
+hl.bind("ALT + RETURN", hl.dsp.exec_cmd("~/.config/hypr/utilities/session/shells.sh music"))
+hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("~/.config/hypr/quickshell/shared/spotify.sh toggle"))
