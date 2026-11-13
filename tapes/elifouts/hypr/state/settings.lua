@@ -54,7 +54,7 @@ return {
         ["animations"] = false,
     },
     ["wallpaper"] = {
-        ["path"] = "$HOME/wallpapers/library/gruvbox/gru-04.jpg",
+        ["path"] = "$HOME/wallpapers/library/catppuccin/cat-04.png",
     },
     ["waybar"] = {
         ["style"] = "default",

@@ -19,4 +19,4 @@ local style, variant = profile:match("([^/]+)/(.+)")
 os.execute("cd '" .. hypr .. "quickshell' && [ \"$(readlink style)\" = " .. style .. " ] || ln -sfn " .. style .. " style")
 package.path = hypr .. style .. "/base/?.lua;" .. hypr .. "state/?.lua;" .. package.path
 package.loaded.machine = dofile(hypr .. "machine/" .. variant .. ".lua")
-for _, name in ipairs({ "startup", "style", "shortcuts", "overrides" }) do require(name) end
+for _, name in ipairs({ "startup", "style", "shortcuts", "special_workspaces", "overrides" }) do require(name) end

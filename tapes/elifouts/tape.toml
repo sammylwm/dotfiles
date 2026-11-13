@@ -1,0 +1,16 @@
+[tape]
+name = "elifouts"
+desc = "Hyprland dotfiles from https://github.com/elifouts/Dotfiles"
+
+
+[hooks]
+insert = [
+  "~/.tapes/elifouts/hypr/utilities/settings/hypr-settings.py sync",
+  "hyprctl reload",
+  "~/.tapes/elifouts/hypr/utilities/session/session.sh start"
+]
+eject = [
+  "awww kill || true",
+  "~/.tapes/elifouts/hypr/utilities/session/session.sh stop",
+  "hyprctl reload"
+]

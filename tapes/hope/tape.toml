@@ -1,0 +1,7 @@
+[tape]
+name = "hope"
+desc = "-"
+
+[hooks]
+insert = ["hyprctl reload"]
+eject = ["hyprctl reload"]
