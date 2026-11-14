@@ -47,6 +47,9 @@ PanelWindow {
         spacing: 16
         anchors.right: parent.right
 
+        Bluetooth {
+        }
+
         Battery {
         }
 
