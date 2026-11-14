@@ -15,7 +15,11 @@ bind.add("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"), { description = "ghost
 
 -- === DMS-Shell ===
 bind.add("SUPER + O", hl.dsp.exec_cmd("waypaper"), {})
-bind.add("SUPER + R", hl.dsp.exec_cmd("hyprlauncher"), { description = "dms ipc call spotlight toggle" })
+bind.add(
+	"SUPER + R",
+	hl.dsp.exec_cmd("qs ipc -c hope call launcher toggle"),
+	{ description = "dms ipc call spotlight toggle" }
+)
 bind.add("super + V", hl.dsp.exec_cmd("dms ipc clipboard open"))
 
 -- === Window Management ===

@@ -3,5 +3,13 @@ name = "hope"
 desc = "-"
 
 [hooks]
-insert = ["hyprctl reload"]
-eject = ["hyprctl reload"]
+insert = [
+	"hyprctl reload", 
+	"nohup qs -c hope > /tmp/hope-shell.log 2>&1 < /dev/null &",
+	"awww-daemon &",
+]
+eject = [
+	"hyprctl reload",
+	"qs kill -c hope|| true",
+	"awww kill"
+]
