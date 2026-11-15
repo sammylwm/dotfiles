@@ -10,6 +10,6 @@ insert = [
 ]
 eject = [
 	"hyprctl reload",
-	"qs kill -c hope|| true",
+	"qs kill -c hope || true",
 	"awww kill"
 ]
