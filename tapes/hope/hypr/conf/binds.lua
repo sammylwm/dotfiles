@@ -17,7 +17,7 @@ bind.add("SUPER + E", hl.dsp.exec_cmd("ghostty -e yazi"), { description = "ghost
 bind.add("SUPER + O", hl.dsp.exec_cmd("waypaper"), {})
 bind.add(
 	"SUPER + R",
-	hl.dsp.exec_cmd("qs ipc -c hope call launcher toggle"),
+	hl.dsp.exec_cmd("qs ipc -c hope-shell call launcher toggle"),
 	{ description = "dms ipc call spotlight toggle" }
 )
 bind.add("super + V", hl.dsp.exec_cmd("dms ipc clipboard open"))
