@@ -20,6 +20,7 @@ return {
 		open_mapping = { [[<C-/>]], [[<C-_>]] },
 		direction = "float",
 		start_in_insert = true,
+		persist_mode = false,
 		insert_mappings = false,
 		terminal_mappings = true,
 		close_on_exit = true,

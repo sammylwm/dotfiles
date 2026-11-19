@@ -9,6 +9,7 @@ local lazy_opts = {
 		{ import = "lazyvimx.extras.lang.qml" },
 		{ import = "lazyvim.plugins.extras.lang.python" },
 		{ import = "lazyvim.plugins.extras.lang.clangd" },
+		{ import = "lazyvim.plugins.extras.lang.dart" },
 	},
 	install = { colorscheme = { "catppuccin", "tokyonight" } },
 	checker = { enabled = true, notify = false },
