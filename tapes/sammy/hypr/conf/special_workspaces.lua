@@ -1,10 +1,22 @@
--- hl.workspace_rule({ workspace = "special:happ", on_created_empty = "happ" })
-hl.workspace_rule({ workspace = "special:vpn", on_created_empty = "AmneziaVPN" })
-hl.workspace_rule({ workspace = "special:tg", on_created_empty = "materialgram" })
--- hl.workspace_rule({ workspace = "special:music", on_created_empty = "yandex-music" })
--- hl.workspace_rule({ workspace = "special:music", on_created_empty = "cassette" })
-hl.workspace_rule({ workspace = "special:music", on_created_empty = "ghostty -e ymusic" })
-hl.workspace_rule({ workspace = "special:localsend", on_created_empty = "localsend" })
+local workspace_programs = {
+	["special:vpn"] = "AmneziaVPN",
+	["special:tg"] = "materialgram",
+	["special:music"] = "ghostty -e ymusic",
+	["special:localsend"] = "localsend",
+}
+
+hl.on("workspace.created", function(workspace)
+	if not workspace.is_empty then
+		return
+	end
+
+	local command = workspace_programs[workspace.addressable_name]
+	if not command then
+		return
+	end
+
+	hl.exec_cmd(command, { workspace = workspace.addressable_name .. " silent" })
+end)
 
 hl.bind("SUPER + D", hl.dsp.workspace.toggle_special("tg"))
 hl.bind("SUPER + L", hl.dsp.workspace.toggle_special("localsend"))
